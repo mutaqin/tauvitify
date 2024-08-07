@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { invoke } from "@tauri-apps/api/core";
 const name = ref('')
-function sayHi() {
-  Notify.success(`Hi, ${name.value}!`)
+async function sayHi() {
+  const greetMsg = await invoke("greet", { name: name.value });
+  Notify.success(`${greetMsg}`)
 }
 function warning() {
   Notify.warning(`How dare you refuse me, ${name.value}.`)
@@ -17,8 +19,8 @@ definePage({
 
 <template>
   <div class="wrapper">
-    <v-icon icon="custom:vitify" size="3.5em" color="primary" class="mb-4" />
-    <p>Opinionated Starter Template</p>
+    <v-icon icon="custom:tauvitify" size="3.5em" color="primary" class="mb-4" />
+    <p>Tauri Vuetify Starter Template</p>
     <v-responsive max-width="300" class="mx-auto">
       <v-text-field
         v-model="name"

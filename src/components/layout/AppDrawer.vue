@@ -25,13 +25,14 @@ drawerStored.value = lgAndUp.value && width.value !== 1280
     :expand-on-hover="rail"
     :rail="rail"
     floating
+    elevation="1"
   >
     <template #prepend>
       <v-list>
         <v-list-item class="pa-1">
           <template #prepend>
             <v-icon
-              icon="custom:vitify"
+              icon="custom:tauvitify"
               size="x-large"
               class="drawer-header-icon"
               color="primary"
@@ -41,7 +42,7 @@ drawerStored.value = lgAndUp.value && width.value !== 1280
             class="text-h5 font-weight-bold"
             style="line-height: 2rem; text-overflow: clip"
           >
-            Vitify <span class="text-primary">Admin</span>
+            <span class="text-primary">Tauvitify</span>
           </v-list-item-title>
         </v-list-item>
       </v-list>
@@ -49,27 +50,6 @@ drawerStored.value = lgAndUp.value && width.value !== 1280
     <v-list nav density="compact">
       <AppDrawerItem v-for="route in routes" :key="route.name" :item="route" />
     </v-list>
-    <v-spacer />
-    <template #append>
-      <v-list-item class="drawer-footer px-0 d-flex flex-column justify-center">
-        <div class="text-caption pt-6 pb-1 pt-md-0 text-center text-no-wrap">
-          &copy; Copyright 2023
-          <a
-            href="https://github.com/kingyue737"
-            class="font-weight-bold text-primary"
-            target="_blank"
-            >Yue JIN</a
-          >
-          <span> & </span>
-          <a
-            href="https://www.nustarnuclear.com/"
-            class="font-weight-bold text-primary"
-            target="_blank"
-            >NuStar</a
-          >
-        </div>
-      </v-list-item>
-    </template>
   </v-navigation-drawer>
 </template>
 
@@ -82,8 +62,6 @@ drawerStored.value = lgAndUp.value && width.value !== 1280
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     &.v-navigation-drawer--is-hovering {
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
       box-shadow:
         0px 1px 2px 0px rgb(0 0 0 / 30%),
         0px 1px 3px 1px rgb(0 0 0 / 15%);

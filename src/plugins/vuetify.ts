@@ -1,6 +1,6 @@
 import 'vuetify/styles'
 import { createVuetify, type IconSet, type IconProps } from 'vuetify'
-import { en, zhHans } from 'vuetify/locale'
+import { en, id } from 'vuetify/locale'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
 import { md3 } from 'vuetify/blueprints'
 import type { VDataTable } from 'vuetify/lib/components/index.mjs'
@@ -31,15 +31,15 @@ const custom: IconSet = {
 }
 
 const theme = {
-  primary: localStorage.getItem('theme-primary') || '#1697f6',
+  primary: localStorage.getItem('theme-primary') || '#0E9CA1',
 }
 
 export default createVuetify({
   blueprint: md3,
   locale: {
-    locale: 'zhHans',
+    locale: 'id',
     fallback: 'en',
-    messages: { zhHans, en },
+    messages: { id, en },
   },
   defaults: {
     VSwitch: {

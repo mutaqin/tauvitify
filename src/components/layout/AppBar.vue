@@ -31,22 +31,9 @@ const toggleDark = useToggle<true, false | null>(isDark)
     <v-breadcrumbs :items="breadcrumbs" />
     <v-spacer />
     <div id="app-bar" />
-    <div>
-      <v-switch
-        :model-value="isDark"
-        color=""
-        hide-details
-        density="compact"
-        inset
-        false-icon="mdi-white-balance-sunny"
-        true-icon="mdi-weather-night"
-        style="opacity: 0.8"
-        @update:model-value="toggleDark"
-      />
-    </div>
     <v-btn
       icon
-      href="https://github.com/kingyue737/vitify-next"
+      href="https://github.com/mutaqin/tauvitify"
       size="small"
       class="ml-2"
       target="_blank"
