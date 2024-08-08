@@ -1,7 +1,7 @@
 {
-  "productName": "Tauvitify",
+  "productName": "Tauvity",
   "version": "0.1.0",
-  "identifier": "com.alanshoriy.tauvitify",
+  "identifier": "com.alanshoriy.tauvity",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "Tauvitify",
+        "title": "Tauvity",
         "width": 800,
         "height": 600,
         "resizable": true,

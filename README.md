@@ -1,7 +1,7 @@
 <p align="center">
-  <img alt="Tauvitify - Opinionated Vuetify Admin Starter Template" src="public/favicon.svg" width=200px/>
+  <img alt="Tauvity - Opinionated Vuetify Admin Starter Template" src="public/favicon.svg" width=200px/>
 </p>
-<h1 align="center">Tauvitify</h1>
+<h1 align="center">Tauvity</h1>
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">

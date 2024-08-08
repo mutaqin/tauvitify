@@ -33,7 +33,7 @@ const toggleDark = useToggle<true, false | null>(isDark)
     <div id="app-bar" />
     <v-btn
       icon
-      href="https://github.com/mutaqin/tauvitify"
+      href="https://github.com/mutaqin/tauvity"
       size="small"
       class="ml-2"
       target="_blank"

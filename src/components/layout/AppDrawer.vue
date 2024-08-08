@@ -32,7 +32,7 @@ drawerStored.value = lgAndUp.value && width.value !== 1280
         <v-list-item class="pa-1">
           <template #prepend>
             <v-icon
-              icon="custom:tauvitify"
+              icon="custom:tauvity"
               size="x-large"
               class="drawer-header-icon"
               color="primary"
@@ -42,7 +42,7 @@ drawerStored.value = lgAndUp.value && width.value !== 1280
             class="text-h5 font-weight-bold"
             style="line-height: 2rem; text-overflow: clip"
           >
-            <span class="text-primary">Tauvitify</span>
+            <span class="text-primary">Tauvity</span>
           </v-list-item-title>
         </v-list-item>
       </v-list>

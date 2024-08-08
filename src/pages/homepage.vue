@@ -19,7 +19,7 @@ definePage({
 
 <template>
   <div class="wrapper">
-    <v-icon icon="custom:tauvitify" size="3.5em" color="primary" class="mb-4" />
+    <v-icon icon="custom:tauvity" size="3.5em" color="primary" class="mb-4" />
     <p>Tauri Vuetify Starter Template</p>
     <v-responsive max-width="300" class="mx-auto">
       <v-text-field
